@@ -1,0 +1,15 @@
+import java.io.IOException;
+
+public class LanzarBloc {
+
+		public static void main(String[] args) {
+			
+			ProcessBuilder pb = new ProcessBuilder("C:\\Windows\\System32\\notepad.exe");
+			try {
+				Process miProceso = pb.start();
+			} catch (IOException e) {
+				
+				e.printStackTrace();
+			}
+		}
+}
